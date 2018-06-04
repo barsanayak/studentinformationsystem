@@ -4,4 +4,4 @@ Student information system app : creating the application using sinatra and depl
 
 Demo of the app :
 
-[a link](https://studentinfoapp278.herokuapp.com/)
+[Demo link](https://studentinfoapp278.herokuapp.com/)
