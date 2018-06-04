@@ -1,0 +1,28 @@
+<h1>Please login</h1>
+<form action="/login" method='post'>
+  <table>
+    <tr>
+      <td>Username:</td>
+      <td><input type='text' name='username' required></input></td>
+    </tr>
+    <tr>
+      <td>Password:</td>
+      <td><input type='password' name='password' required></input></td>
+    </tr>
+    <tr class="row">
+      <td>&nbsp;</td>
+
+      <td class="login"><input type='submit' name='submit' value="Log In"></input></td>
+    </tr>
+  </table>
+  <% if !@error.nil? %>
+    <p class="color-red">
+      <%= "#{@error}" %>
+    </p>
+  <% end %>
+
+</form>
+
+<div>
+
+</div>

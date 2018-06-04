@@ -1,0 +1,38 @@
+
+<h1>Add New Student Information</h1>
+<form action="/students/new" method='post'>
+  <table>
+    <tr>
+      <td>Studentid</td>
+      <td><input type='text' name='studentid' placeholder="Wxxxxxxx" required pattern="(W\d{7})"></input></td>
+    </tr>
+    <tr>
+      <td>FirstName</td>
+      <td><input type='text' name='firstname' placeholder="Enter first name" required></input></td>
+    </tr>
+    <tr>
+      <td>Last name:</td>
+      <td><input type='text' name='lastname' placeholder="Enter last name"  required></input></td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td><input type='text' name='address' placeholder="Enter apt#,street, city, state" ></input></td>
+    </tr>
+    <tr>
+      <td>Birthday:</td>
+      <td>
+        <input type="text" title="mm/dd/yyyy" placeholder="mm/dd/yyyy" required pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d" name="birthday" required></input>
+      </td>
+    </tr>
+    <tr>
+      <td>Grade:</td>
+      <td><input type="number" name='grade' min="1" max="10" placeholder="integer" step="1"></input></td>
+
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type='submit' name='submit' value="Add Student"></input></td>
+    </tr>
+  </table>
+
+</form>

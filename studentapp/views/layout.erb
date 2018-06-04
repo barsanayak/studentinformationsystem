@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link rel='stylesheet', type='text/css' href="<%= url("/css/style.css")%>" >
+    <title><%= @title || "Student Info System"%></title>
+  </head>
+<body>
+  <div class="home_page_image">
+    <img src="/image/12.png" width=70% >
+
+
+  </div>
+  <div class="right-text-header" >
+    <div  class="right-text-body" >
+      <h1> Student <br/> Information <br/> System</h1>
+
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+  </div>
+
+  <div class="navbarclass" >
+<ul>
+  <li><a href='/'>Home</a>  </li>
+  <li><a href='/about'>About</a>  </li>
+  <li><a href='/contact'>Contact</a>  </li>
+  <li><a href='/students'>Students</a>  </li>
+  <li><a href='/comments'>Comment</a>  </li>
+  <li><a href='/video'>Video</a>  </li>
+  <li>
+    <% if session[:admin] then  %> <a href="/logout">Logout</a>
+    <% else %> <a href="/login">Login</a>
+    <% end %>
+  </li>
+  </ul>
+  </div >
+<%= yield %>
+
+</body>
+  </html>

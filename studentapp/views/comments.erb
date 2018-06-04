@@ -1,0 +1,18 @@
+<h2>Comments</h2>
+
+<a class="create_comment_class" href="/comments/new">Create new comment</a>
+
+<% if @comments.count==0  %>
+  <p>No comment has been  added yet!</p>
+<%  else %>
+
+  <h3>Comments List</h3>
+  <div class="comments_list">
+  <ul>
+    <% @comments.each do |comment| %>
+      <li> <a  href="comments/<%= comment.id %>"> <span class="comment_link"> <%= comment.content %></a> </span> - <span class="create_at_span"> <%= comment.created_at %> </span> </li>
+    <% end %>
+  </ul>
+  </div>
+<% end %>
+

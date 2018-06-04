@@ -1,0 +1,29 @@
+
+<h2>Students </h2>
+<br/>
+<div class="button_students_add_student">
+
+  <a  href="/students/new">Add new student</a>
+
+</div>
+
+
+
+<% if @students.count==0  %>
+  <p>No student has been  added yet!</p>
+<%  else %>
+  <h3>Students list</h3>
+  <div class="student_list">
+  <ul>
+    <% @students.each do |student| %>
+      <li><a href="/students/<%= student.id %>"><%= student.firstname %> <%= student.lastname %><br/></a><br/></li><br/>
+
+    <% end %>
+  </ul>
+  </div>
+<% end %>
+<br/>
+
+
+
+

@@ -1,0 +1,33 @@
+<h1>Update Student Info</h1>
+<form action="/students/<%= @student.id %>" method='post'>
+  <table>
+    <tr>
+      <td>First name:</td>
+      <td><input type='text' name='firstname' value="<%= @student.firstname %>" required></input></td>
+    </tr>
+    <tr>
+      <td>Last name:</td>
+      <td><input type='text' name='lastname' value="<%= @student.lastname %>" required></input></td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td><input type='text' name='address' value="<%= @student.address %>" required></input></td>
+    </tr>
+    <tr>
+      <td>Birthday:</td>
+      <td>
+        <input type="text" title="mm/dd/yyyy" placeholder="mm/dd/yyyy" required pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d" name="birthday" value="<%= @student.birthday.strftime("%m/%d/%Y") %>" required></input>
+      </td>
+    </tr>
+    <tr>
+      <td>Grade:</td>
+      <td><input type='number' name='grade' min="1" max="10" value="<%= @student.grade %>" required></input></td>
+    </tr>
+    <tr class="gap_update">
+
+      <td><input type='hidden' name='_method' value='PUT'></td>
+      <td class="update_student"><input type='submit' name='submit' value="Update"></input></td>
+    </tr>
+  </table>
+
+</form>

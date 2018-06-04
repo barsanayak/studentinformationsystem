@@ -1,0 +1,16 @@
+
+<h2 class="subheading">Welcome to Student Information System.</h2>
+<br/>
+
+
+
+
+<% if session[:admin] == true %>
+  <p>You are logged in as ADMIN </p>
+<%  else %>
+
+  <div class="button_home_login">
+    <h3>Please login here <a  href="/login">Login</a></h3>
+
+  </div>
+<% end %>

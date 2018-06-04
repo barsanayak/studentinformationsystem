@@ -1,0 +1,13 @@
+<h1>Display Comment Details</h1>
+
+<h3>Comment by: <%= @comment.name %></h3>
+<h3>Created at:   <%= @comment.created_at %> </h3>
+<h3>Content:</h3>
+<p ><%= @comment.content %></p>
+
+<div class="back_to_comments">
+  <p>
+    <a href="/comments">back to comments list</a>
+  </p>
+
+</div>

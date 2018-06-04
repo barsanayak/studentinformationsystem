@@ -1,0 +1,331 @@
+html {
+    background: transparent url(../image/dots.jpg); }
+
+body {
+    width: 700px;
+    height: 900px;
+    background-color: #dddcd9;
+    margin: 2em auto 2em;
+    padding: 25px;
+    position: relative;
+    border: 10px dotted aliceblue;
+    background-clip: border-box; }
+
+h1 {
+    line-height: 70px; }
+
+.subheading {
+    font-family: Jazz LET, fantasy;
+}
+
+ul {
+    list-style: none; }
+
+.navbarclass li {
+    float: left;
+}
+.navbarclass {
+    border: 2px dotted aquamarine;
+}
+
+a {
+    text-decoration: none; }
+
+.home_page_image img {
+    float: left; }
+
+.navbarclass a:link {
+    color: white; }
+
+.navbarclass a:visited {
+    color: aliceblue; }
+
+.navbarclass a:hover {
+    color: yellow; }
+
+.right-text-body {
+    text-align: center;
+    color: darkred; }
+
+.right-text-header {
+    color: darkred;
+    alignment: right;
+    padding-left: 105px; }
+
+.navbarclass {
+    margin: 0;
+    padding: 0;
+    background: grey;
+    overflow: hidden; }
+.navbarclass a {
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    color: yellow; }
+
+.button_students_add_student {
+    display: block;
+    width: 180px;
+    height: 28px;
+    border-radius: 12px;
+    background: darkred;
+    padding: 2px;
+    padding-top: 8px;
+    text-align: center;
+    color: deeppink;
+    font-weight: bold; }
+
+.button_students_add_student a {
+    color: yellow;
+}
+
+.button_students_add_student:hover {
+    background: darkred; }
+
+.header_system {
+    color: darkred; }
+
+.button_home_login h3 {
+    display: inline; }
+.button_home_login h3 a {
+    display: inline;
+    color: darkblue; }
+
+.student_list {
+    color: deeppink;
+    background: lightcyan;
+    text-align: left;
+    font-weight: bold; }
+.student_list a:link {
+    color: deeppink;
+    text-align: left; }
+.student_list ul {
+    list-style: circle;
+    background-color: #dddcd9;
+}
+.student_list li {
+    text-align: left;
+    text-decoration-style: solid;
+    color: deeppink;}
+
+.delete_student a button{
+    display: block;
+    width: 100px;
+    height: 46px;
+    border-radius: 12px;
+    background: darkred;
+    padding: 2px;
+    padding-top: 2px;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+
+
+}
+
+.delete_student button {
+    display: block;
+    width: 100px;
+    height: 46px;
+    border-radius: 12px;
+    background: darkred;
+    padding: 2px;
+    padding-top: 2px;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+
+}
+
+.update_student_button {
+
+
+}
+
+#outer
+{
+
+}
+.inner
+{
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+.back_to_students {
+    display: block;
+    width: 180px;
+    height: 46px;
+    border-radius: 12px;
+    background: darkred;
+    padding: 2px;
+    padding-top: 2px;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+
+}
+.back_to_students a {
+    color: yellow;
+
+}
+.gap {
+    padding-left: 20px;
+}
+
+
+.create_comment_class {
+    display: block;
+    width: 180px;
+    height: 28px;
+    border-radius: 12px;
+    background: darkred;
+    padding: 10px;
+    padding-top: 15px;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+
+}
+
+.create_comment_class a {
+    color: yellow;
+}
+
+.comments_list ul {
+    list-style: circle;
+    padding : 2px;
+
+}
+.comments_list li {
+    padding-bottom: 5px;
+
+}
+
+
+.back_to_comments {
+    display: block;
+    width: 180px;
+    height: 46px;
+    border-radius: 12px;
+    background: darkred;
+    padding: 2px;
+    padding-top: 2px;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+
+}
+.back_to_comments a {
+    color: yellow;
+}
+
+.login input{
+
+    display: block;
+    width: 80px;
+    height: 30px;
+    border-radius: 12px;
+    background: darkred;
+    padding: 2px;
+    padding-top: 2px;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+    align-self: center ;
+
+}
+
+.login a {
+    color: yellow;
+}
+.row {
+    padding-bottom: 20px;
+    padding-left:20px;
+}
+
+.save_comment input{
+
+    display: block;
+    width: 120px;
+    height: 40px;
+    border-radius: 12px;
+    background: darkred;
+    padding: 2px;
+    padding-top: 2px;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+    align-self: center ;
+
+}
+
+.save_comment a {
+    color: yellow;
+}
+
+.comment_link {
+
+    display: block;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display:inline;
+
+}
+.update_student input{
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    background: darkred;
+    padding: 2px;
+    padding-top: 2px;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+    align-self: center ;
+}
+.create_at_span {
+    display:inline;
+
+}
+
+.indent-1 {float: left;}
+
+.section_1{
+    width : 70%;
+    float : left;
+    padding-right: 10px;
+}
+
+.section_2{
+    padding-left: 20px;
+    width : 20%;
+    float : left;
+}
+
+.side_1{
+
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    float: left;
+}
+
+.upload_photo a button{
+    display: block;
+    width: 200px;
+    height: 46px;
+    border-radius: 12px;
+    background: darkred;
+    padding: 2px;
+    padding-top: 2px;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+
+
+}

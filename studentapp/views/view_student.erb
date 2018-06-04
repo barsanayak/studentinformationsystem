@@ -1,0 +1,43 @@
+<h1>Student Information</h1>
+<div class="side_1">
+
+
+<p>Name: <b><%= @student.firstname %> <%= @student.lastname  %> </b></p>
+<p>Address: <b><%= @student.address %> </b></p>
+<p>Birthday: <b><%= @student.birthday.strftime("%m/%d/%Y") %> </b></p>
+<p>Grade: <b> <%= @student.grade %> </b></p>
+</div>
+<div class="side_1">
+
+  <img src="../<%= @student.photo %> " width=60% height="20%"><br/>
+  <br/>
+  <div class="upload_photo"> <a href="/students/<%= @student.id %>/update_student_image"><button>Update Profile photo</button></a></div>
+
+
+  <br/>
+
+</div>
+<div id="outer" class="update_student_button ">
+
+  <table>
+    <tr>
+      <td><div><div class="delete_student inner"><a href="/students/<%= @student.id %>/update"><button>Update</button></a>&nbsp;&nbsp;&nbsp;</div></div></td>
+      <td><div><div class="delete_student inner"><form action="/students/<%= @student.id %>"  method="post">
+        <div > <input type='hidden' name='_method' value='DELETE'/>
+          <button type='submit' class='linkbtn bottomborder'>Delete</button> </div>
+      </form></div></div></td>
+    </tr>
+  </table>
+
+</div>
+
+
+<div gap>
+
+
+<div class="back_to_students ">
+<p >
+  <a href="/students">Back to students list</a>
+</p>
+</div>
+</div>
